@@ -1949,5 +1949,9 @@ i.im_important_icon {
 }
 
 .wide_wall_module .post_share_icon {
-    margin: 5px 2px 0 6px!important; }!important;
+    margin: 5px 2px 0 6px!important;
+}
+
+.narrow_column .module_body {
+    border: none !important;
 }
