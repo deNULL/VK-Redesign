@@ -1,7 +1,7 @@
 .top_home_link {
     /* background: none !important; */
     /* display: none!important; */
-    width: 60px !important;
+    width: 52px !important;
     height: 50px !important;
 }
 
@@ -97,7 +97,7 @@
 body {
     font-family: Tahoma, Geneva, sans-serif, arial, verdana !important;
     font-size: 13px !important;
-    line-height: 160% !important;
+    line-height: 1.167 !important;
     background: #F0F2F5!important;
     /* background-image: url(screenshot-12dec2014-02.42.45.png)!important; */
 }
@@ -138,8 +138,12 @@ body {
     border: none !important;
 }
 
-#footer>div:last-of-type {
+#footer_wrap div small {
     display: none!important;
+}
+
+#footer_wrap p {
+    display: none !important;
 }
 
 #footer_wrap {
@@ -148,7 +152,7 @@ body {
     line-height: 1.15em!important; padding: 15px 0px 35px!important; text-align: center!important;
 }
 
-#footer {
+#footer, #footer_wrap>.copy_lang {
     text-align: left !important;
     /* line-height: 140%!important; */
     /* font-size: 13px!important; */
@@ -162,14 +166,14 @@ body {
     height: 0px !important;
 }
 
-#footer .bnav_lang {
+#footer_wrap .bnav_lang {
     /* float: right!important; */
     position: absolute!important;
     right: 0!important;
     margin: 0!important;
 }
 
-#footer .bnav_lang:before {
+#footer_wrap .bnav_lang:before {
     /* content: "YAZYK"!important; */
     /* text-decoration: none!important; */
     color: #7C7F82!important;
@@ -181,7 +185,7 @@ body {
     /* text-align: right!important; */
 }
 
-#footer .bnav_lang:hover:before {
+#footer_wrap .bnav_lang:hover:before {
     /* text-decoration: none !important; */
     /* width: 0!important; */
     /* display: inline-block!important; */
@@ -198,7 +202,14 @@ body {
 }
 
 #header {
-    display: none !important;
+    /* display: none !important; */
+    /* position: absolute; */
+    visibility: hidden !important;
+    /* right: 0; */
+    height: 0 !important;
+    padding: 0 !important;
+    /* top: 34px; */
+    /* font-size: 13px !important; */
 }
 
 .wide_column {
@@ -373,10 +384,11 @@ ul.t0 a span.count, ul.t0 li.active_link a span.count {
 div#profile {
     width: auto !important;
     /* left: -5px !important; */
+    /* padding-left: 0px !important; */
 }
 
 .wr_header {
-    height: 19px !important;
+    height: 16px !important;
 }
 
 .im_fixed_nav #im_controls_wrap {
@@ -401,6 +413,12 @@ div#profile {
     /* border-top: 25px solid #F0F2F5!important; */
 }
 
+#im_nav_wrap {
+    position: absolute!important; z-index: 130 !important; width: 727px !important;
+    top: -25px !important; padding-top: 25px!important; background: #F0F2F5 !important; margin-left: -1px!important;
+    /* height: 101px !important; */
+}
+
 #im_nav_wrap .t_bar {
     /* border-left: 1px solid #E5E8EC!important; */
     /* border-right: 1px solid #E5E8EC!important; */
@@ -415,7 +433,7 @@ div#profile {
     background: #F7F8FA !important;
 }
 
-#im_content {
+.im_fixed_nav #im_content {
     /* padding-top: 100px !important; */
     margin-top: -150px!important;
 }
@@ -459,13 +477,13 @@ div#profile {
 }
 
 .audio_filter div.icon_wrap {
-    width: 32px!important;
-    height: 32px!important;
+    width: 28px!important;
+    height: 28px!important;
 }
 
 .audio_filter div.icon {
-    top: 11px !important;
-    right: 10px !important;
+    top: 9px !important;
+    right: 9px !important;
 }
 
 .audio_filter div.icon.edit {
@@ -480,8 +498,10 @@ div#profile {
     width: 458px!important;
 }
 
-.font_medium #audio.new .audio_search .s_search {
-    width: 342px !important;
+#audio.new .audio_search .s_search {
+    width: 300px !important;
+    padding: 17px 50px 18px !important;
+    /* width: 407px !important; */ background: url(https://vk.com/images/dev_magglass.png) no-repeat scroll 30px 17px !important; height: 13px !important; border: none !important; outline: none !important;
 }
 
 #photos_albums_container .photo_row {
@@ -547,11 +567,11 @@ div#profile {
 }
 
 .wall_module .post_like_icon, .wall_module .post_share_icon {
-    margin: 6px 3px 0px 5px !important;
+    margin: 3px 3px 0px 5px !important;
 }
 
 .wall_module .post_share_icon {
-    margin-top: 5px !important;
+    margin-top: 2px !important;
 }
 
 .wall_module .like_wrap i, .fw_reply .like_wrap i {
@@ -564,7 +584,7 @@ div#profile {
 
 .wide_wall_module .reply_info {}
 
-.font_medium #page_body {
+#page_body {
     font-size: 13px !important;
     z-index: 130 !important;
 }
@@ -641,7 +661,7 @@ div#profile {
     font-weight: normal !important;
     /* text-transform: capitalize !important; */
     padding: 0 15px !important;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
 .font_medium .head_nav a.top_nav_link:first-letter, .head_nav a.top_nav_link:first-letter {
@@ -655,6 +675,7 @@ div#profile {
 
 #head_music {
     padding-right: 38px !important;
+    text-transform: capitalize;
 }
 
 .top_back_link_td {
@@ -761,7 +782,7 @@ div#profile {
     height: 50px!important;
     /* line-height: 48px !important; */ -webkit-font-smoothing: antialiased!important; -moz-osx-font-smoothing: grayscale!important; font-size: 13px!important;
     /* padding: 0px 15px !important; */ margin: 0!important; border: none!important;
-    margin: 14px 15px -14px!important;
+    margin: 17px 15px -17px!important;
 }
 
 #im_chat_actions .divider {
@@ -784,7 +805,9 @@ ul.t0 a span.count {
 
 .input_back_content {
     /* width: 363px !important; */
-    line-height: initial !important;
+    line-height: inherit !important;
+    padding: 0px 2px !important;
+    color: #929EB0 !important;
 }
 
 #left_ads {
@@ -861,7 +884,7 @@ ul.t0 a span.count {
 }
 
 #feed_tab_add_header {
-    padding: 4px 8px 3px 9px !important;
+    padding: 6px 8px 3px 9px !important;
 }
 
 .feed_filter_tabs_title {
@@ -889,13 +912,15 @@ ul.t0 a span.count {
     height: 181px !important;
 }
 
-.settings_section {}
+.settings_section {
+    width: 494px !important;
+}
 
 #friends_req_tabs {
     background: #FFF !important; border-bottom: none !important; padding-bottom: 0px !important;
 }
 
-.font_medium .summary_tabs {
+.summary_tabs {
     font-size: 13px !important;
 }
 
@@ -915,6 +940,7 @@ ul.t0 a span.count {
 
 .video_search {
     background: #FFF !important; border-bottom: none !important;
+    position: relative !important;
     padding-bottom: 3px !important;
 }
 
@@ -991,16 +1017,16 @@ ul.t0 a span.count {
 }
 
 a.dd_link, .pageBody a.dd_link {
-    background-position: right 5px !important;
+    background-position: right 3px !important;
 }
 
 .dd_menu_header div {
-    line-height: 160% !important;
-    background-position: right -11px !important;
+    /* line-height: 160% !important; */
+    background-position: right -13px !important;
 }
 
 .dd_header_hover div {
-    background-position: right 7px !important;
+    background-position: right 5px !important;
 }
 
 #feed_menu {
@@ -1014,6 +1040,10 @@ a.dd_link, .pageBody a.dd_link {
 
 .module_body .people_cell .name_field {
     line-height: 120% !important;
+}
+
+.module_body .people_cell .name_field small {
+    font-size: 11px !important;
 }
 
 .gifts_list_module a span.fl_l, .counts_module div a .fl_r {
@@ -1051,6 +1081,11 @@ a.dd_link, .pageBody a.dd_link {
 
 #profile_full_info h4 {
     height: 7px !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
+    border: none !important;
+    margin-top: 7px !important;
+    /* font-weight: normal !important; */
 }
 
 #profile_map_cont {
@@ -1245,7 +1280,7 @@ a.ts_search_link {
 }
 
 .add_media_head {
-    padding-top: 5px !important;
+    padding-top: 7px !important;
     /* padding-left: 26px !important; */
 }
 
@@ -1267,12 +1302,12 @@ a.ts_search_link {
 
 .wall_module .like_wrap i, .fw_reply .like_wrap i {
     margin-left: 4px !important;
-    margin-top: 7px !important;
+    margin-top: 3px !important;
 }
 
 .add_media_item {
-    padding-top: 3px !important;
-    padding-bottom: 5px !important;
+    padding-top: 5px !important;
+    padding-bottom: 3px !important;
 }
 
 #ads_page_wrap1 {
@@ -1343,19 +1378,32 @@ img.im_log_author_chat_thumb {
 }
 
 .audio_friends_search_btn {
-    height: 19px !important;
-    background-position: 136px 11px !important;
+    height: 14px !important;
+    background-position: 136px 8px !important;
 }
 
-.font_medium input[type="text"], .font_medium input[type="submit"], .font_medium input[type="button"], .font_medium input[type="search"], .font_medium input[type="password"], .font_medium input[type~="text"], .font_medium input[type~="search"], .font_medium input[type~="password"], .font_medium input[type~="email"], .font_medium input.text, .font_medium input.search, .font_medium textarea, .font_medium input.big_text, .font_medium input.file {
+input[type="text"],
+input[type="submit"],
+input[type="button"],
+input[type="search"],
+input[type="password"],
+input[type~="text"],
+input[type~="search"],
+input[type~="password"],
+input[type~="email"],
+input.text,
+input.search,
+textarea,
+input.big_text,
+input.file {
     font-size: 13px !important;
     font-family: Tahoma, Geneva, sans-serif, arial, verdana !important;
     outline: none !important;
 }
 
 .audio_friends_search_input.text {
-    height: 19px !important;
-    background-position: 135px 10px !important;
+    height: 14px !important;
+    background-position: 135px 7px !important;
 }
 
 .audio_search .s_search {
@@ -1365,10 +1413,12 @@ img.im_log_author_chat_thumb {
 
 .audio_search div.abutton_wrap .flat_button {
     height: 28px !important;
+    width: 138px !important;
+    margin-left: 1px !important;
 }
 
-.font_medium .dd_menu_stype_act .dd_menu_header div {
-    /* width: 102px !important; */
+.dd_menu_stype_act .dd_menu_header div {
+    width: 106px !important;
     height: 14px !important;
     padding-top: 5px !important;
 }
@@ -1453,7 +1503,8 @@ img.feedback_group_photo {
 }
 
 .settings_tabs ul.t0 a {
-    margin-right: 20px !important;
+    margin-right: 17px !important;
+    font-size: 13px !important;
 }
 
 .pv_thumb img {
@@ -1466,17 +1517,19 @@ img.feedback_group_photo {
 
 .video_search #v_search {
     width: 490px !important;
+    top: 0 !important;
+    position: absolute !important;
 }
 
 small {
     font-size: 12px !important;
 }
 
-.font_medium .wall_module .reply_link_wrap {
+.wall_module .reply_link_wrap {
     font-size: 12px !important;
 }
 
-.font_medium .post_like, .font_medium .post_share {
+.post_like, .post_share {
     font-size: 12px !important;
 }
 
@@ -1499,6 +1552,11 @@ span.left_count_wrap.fl_r {}
 
 .wall_module #submit_post_box textarea {
     width: 430px !important;
+    padding-right: 35px !important;
+}
+
+.big_wall_post #submit_post_box textarea {
+    width: 679px !important;
 }
 
 .wall_module .wall_reply_text {
@@ -1514,7 +1572,7 @@ span.left_count_wrap.fl_r {}
 }
 
 .chat_onl_icon {
-    margin-top: 4px !important;
+    /* margin-top: 4px !important; */
 }
 
 div.feedback_row_content, .wall_module .feedback_row_text .wall_post_text {
@@ -1532,4 +1590,346 @@ div.feedback_row_content, .wall_module .feedback_row_text .wall_post_text {
 
 #wl_post .wide_wall_module .reply_box_open .reply_field {
     /* width: 510px !important; */
+}
+
+
+#im_nav_wrap ul.t0 li.active_link a:hover {
+    /* background: #4B6D94 !important; */
+    color: #FFF !important;
+}
+
+#search_bl_submit {
+    width: 200px !important;
+}
+
+
+#profile_online_lv {
+    visibility: visible !important;
+    margin: 36px 9px !important;
+    font-size: 13px !important;
+    font-weight: normal !important;
+}
+
+#page_current_info .current_text {
+    font-size: 12px !important;
+    /* padding: 1px 0px !important; */
+    padding-left: 0px !important;
+}
+
+.emoji, .emoji_css {
+    vertical-align: middle !important;
+}
+
+.wide_wall_module .published_by_quote .wall_text, .wide_wall_module .published_by_quote .wall_post_text, .wide_wall_module .published_by_quote .post_media {
+    width: 620px !important;
+}
+
+#stl_left .down {
+    margin-top: 52px !important;
+}
+
+.dialogs_msg_body .dialogs_inline_author {
+    border-radius: 16px !important;
+}
+
+#im_to_end_wrap {
+    width: 725px !important;
+}
+
+.feed_filter_icon {
+    margin-top: 3px !important;
+}
+
+.info_table .info_tab .labeled_text {
+    width: 359px !important;
+}
+
+.groups_list_module .group_desc, .page_list_module .group_desc, .page_list_module .people_desc, .page_list_module .people_extra {
+    max-height: 42px !important;
+}
+
+#stl_left .back {
+    margin-top: 56px !important;
+}
+
+#audio.new .audio_search {
+    padding: 0px !important;
+    padding-top: 3px !important;
+    border-bottom: 1px solid #F0F3F6 !important;
+}
+
+.audio_search .search_progress {
+    margin-top: 12px !important;
+}
+
+.audio_search .search_reset {
+    margin-top: 12px !important;
+}
+
+.audio_search div.abutton_wrap {
+    top: 9px !important;
+}
+
+#audio.new .audio_list {
+    margin: 10px 15px !important;
+    padding: 0px !important;
+}
+
+#audio.new .audio_table .audio {
+    left: 0px !important;
+}
+
+#page_current_info {
+    font-size: 12px !important;
+}
+
+/* Wide search boxes */
+
+/* background: .input_back */
+#settings_bl_search_wrap .input_back, #audio.new .audio_search .input_back, #friends .search .input_back, .video_search .input_back, .groups_list_search .input_back, .wall_search_wrap .input_back, #im_filter_out .input_back, .search_isearch .input_back, #feed_isearch>.input_back_wrap>.input_back {
+    padding: 17px 50px 18px !important;
+    width: 408px !important;
+    /* background: url(https://vk.com/images/dev_magglass.png) no-repeat scroll 30px 17px !important; */
+    height: 13px !important; border: none !important; outline: none !important;
+    margin: 0 !important;
+}
+
+.search_isearch .input_back {
+    width: 523px !important;
+}
+
+#im_filter_out .input_back {
+    width: 360px !important;
+}
+
+/* wrapper */
+#settings_bl_bar, #friends .search, .video_search, .groups_list_search, #wall_search_bar, #im_bar, #feed_isearch {
+    padding: 0 !important;
+    background: #fff !important;
+    border-bottom: 1px solid #F0F3F6 !important;
+    height: initial !important;
+}
+
+#feed_isearch {
+    margin: 0 -15px !important;
+    width: 100% !important;
+    padding: 0px 30px 0px 0px !important;
+}
+
+#im_filter_out {
+    padding: 0px !important;
+    height: initial !important;
+}
+
+/* input */
+#settings_bl_search, #friends #s_search, .video_search #v_search, #groups_list_search, #wall_search, #im_filter, .search_isearch #search_query, #feed_search {
+    padding: 17px 50px 18px !important;
+    width: 407px !important;
+    background: url(https://vk.com/images/dev_magglass.png) no-repeat scroll 30px 17px !important; height: 13px !important; border: none !important; outline: none !important;
+    line-height: normal !important;
+    /* position: static !important; */
+    /* top: 0px !important; */
+}
+
+.search_isearch #search_query {
+    width: 530px !important;
+}
+
+.search_isearch {
+    margin: -10px -10px;
+}
+
+#im_filter {
+    width: 360px !important;
+}
+
+/* button at right */
+#settings_bl_sumbit, #friends .search #invite_button, #video_add_button, .groups_list_search>button, #wall_search_bar>button, #im_filter_out>button {
+    margin: 10px 9px 9px !important;
+}
+
+#im_important_btn {
+    padding: 6px 10px 7px !important;
+}
+
+/* loaders & reset buttons below */
+#wall_reset_search {
+    left: 470px !important;
+    margin-top: 12px !important;
+}
+
+.audio_search .search_progress {
+    margin-top: 12px !important;
+}
+
+#friends_loading {
+    margin-left: 540px !important;
+    margin-top: 19px !important;
+}
+
+#friends_reset_search, .audio_search .search_reset, #groups_reset_search {
+    margin-top: 12px !important;
+}
+
+#friends_reset_search {
+    margin-left: 553px !important;
+}
+
+#groups_loading {
+    margin-left: 524px !important;
+    margin-top: 18px !important;
+}
+
+#groups_reset_search {
+    margin-left: 537px !important;
+}
+
+#video_search_controls {
+    position: static;
+    /* height: 20px !important; */
+    margin-top: 48px !important;
+    margin-bottom: 0px !important;
+    /* z-index: 10000; */
+    width: 725px !important;
+}
+
+.video_search_cont {
+    padding: 1px 11px !important;
+    width: 705px !important;
+}
+
+#video_search .input_back_wrap {
+    position: absolute !important;
+    top: 0 !important;
+}
+
+.video_search .video_reset_search {
+    margin-left: 524px !important;
+    margin-top: 12px !important;
+}
+
+.video_search .video_loading {
+    margin-left: 511px !important;
+    margin-top: 18px !important;
+}
+
+div.fw_post_info {
+    width: 630px !important;
+}
+
+#im_tabs {
+    padding: 3px !important;
+}
+
+.wide_wall_module .post_media {
+    width: 631px !important;
+}
+
+.page_media_poll_title {
+    max-width: 500px !important;
+}
+
+.page_media_poll {
+    max-width: 500px !important;
+}
+
+.narrow_column {
+    /* width: 210px !important; */
+}
+
+.module_header .header_top {
+    background: #fff !important;
+    padding: 2px 1px !important;
+    /* font-weight: normal !important; */
+    font-size: 14px !important;
+    border: none !important;
+}
+
+.module_header .header_top .right_link {
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.p_header_bottom {
+    background-color: #fff !important;
+    border: none !important;
+    color: #999;
+    padding: 1px 1px 4px !important;
+}
+
+#profile .narrow_column .module_body {
+    border: none !important;
+}
+
+#imw_editable {
+    width: 487px !important;
+}
+
+#pedit_filters li a {
+    /* margin-right: 25px !important; */
+    font-size: 13px !important;
+}
+
+.selector_container td.selector input {
+    height: 18px !important;
+}
+
+#friends .info_msg {
+    max-width: 494px !important;
+}
+
+.module_header .header_top#page_wall_header {
+    padding: 14px 1px 6px !important;
+}
+
+.im_bar_controls {
+    padding: 3px 7px 3px 4px !important;
+}
+
+i.im_important_icon {
+    margin-top: 1px !important;
+}
+
+#im_footer_filler {
+    background: #F0F2F5!important;
+}
+
+.app_search_genre .apps_cat_row, #apps_search_cat_wrap .apps_cat_row {
+    margin: 7px !important;
+    /* margin-right: 5px !important; */
+    /* margin-bottom: 5px !important; */
+}
+
+#apps_search_cat_wrap {
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+}
+
+.page_list_module .line_cell {
+    padding: 3px 0px !important;
+}
+
+.page_list_module .thumb img {
+    border-radius: 16px !important;
+}
+
+#ac.add .info {
+    width: 508px !important;
+}
+
+#side_bar ol li .left_row:focus span {
+    /* color: red !important; */
+}
+
+.feedback_row_date {
+    max-width: 547px !important;
+}
+
+.search_bigph_label {
+    background-position: left -60px !important;
+}
+
+#feed_query_reset {
+    margin-left: 670px !important;
+    margin-top: 12px !important;
 }

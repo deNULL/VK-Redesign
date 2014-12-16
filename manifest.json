@@ -1,0 +1,24 @@
+{
+  "name": "VK Redesign",
+  "version": "1.2",
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "manifest_version": 2,
+  "description": "Новое оформление сайта ВКонтакте, вдохновленное редизайном раздела http://vk.com/dev",
+  "content_scripts": [
+    {
+      "matches": ["*://*.vk.com/*"],
+      "exclude_matches": [
+        "*://*.vk.com/apps?act=manage",
+        "*://*.vk.com/dev",
+        "*://*.vk.com/dev/*",
+        "*://*.vk.com/editapp*"
+      ],
+      "css": ["vk-redesign.css"]
+    }
+  ],
+  "web_accessible_resources": ["vk-redesign.css"]
+}
