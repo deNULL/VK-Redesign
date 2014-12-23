@@ -1,6 +1,6 @@
 {
   "name": "VK Redesign",
-  "version": "1.6",
+  "version": "1.7",
   "icons": {
     "16": "icon-16.png",
     "48": "icon-48.png",
@@ -11,7 +11,7 @@
   "content_scripts": [
     {
       "matches": ["*://*.vk.com/*"],
-      "css": ["vk-redesign.css"]
+      "js": ["content.js"]
     }
   ],
   "web_accessible_resources": ["vk-redesign.css"]
