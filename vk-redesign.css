@@ -377,4 +377,5 @@ body:not(.body_im) #page_header_cont {
 }
 
 .post[data-ad] {
-  display: none !im
+  display: none !important;
+}
