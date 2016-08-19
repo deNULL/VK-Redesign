@@ -96,8 +96,8 @@ body {
   margin: 0 auto !important;
 }
 
-#page_header_cont {
-  overflow: hidden !important;
+#page_header_wrap {
+  max-width: 100% !important;
 }
 
 .im-page.im-page_classic .im-mess-stack {
