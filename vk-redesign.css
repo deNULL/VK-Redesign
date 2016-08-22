@@ -199,6 +199,10 @@ body:not(.body_im) .im-right-menu.ui_rmenu {
   top: 0px !important;
 }
 
+body:not(.body_im)  .top_audio_layer {
+  position: absolute !important;
+}
+
 /* Attach the header to the top */
 
 body:not(.body_im) #page_header_cont {
