@@ -19,78 +19,110 @@ body {
 
 /* Increase page width by 205px */
 
+@media (min-width: 1200px) {
+  :root {
+    --increase: 55px;
+  }
+}
+
+@media (min-width: 1400px) {
+  :root {
+    --increase: 105px;
+  }
+}
+
+@media (min-width: 1600px) {
+  :root {
+    --increase: 205px;
+  }
+
+  .apps_cat_row {
+    margin-right: 50px !important;
+    margin-top: 30px !important;
+    margin-bottom: 25px !important;
+  }
+
+  .apps_cat_wrap {
+    margin-left: 50px !important;
+  }
+
+  .photos_container_albums .photos_album_thumb {
+    width: 233px !important;
+  }
+}
+
+
 #page_body {
-  min-width: 1000px !important;
+  min-width: calc(795px + var(--increase)) !important;
 }
 
 #page_layout {
-  min-width: 1165px !important;
+  min-width: calc(960px + var(--increase)) !important;
 }
 
 .dev #page_layout {
-  min-width: 1000px !important;
+  min-width: calc(795px + var(--increase)) !important;
 }
 
 .dev_page_block.dev_main_sections {
-  min-width: 1000px !important;
+  min-width: calc(795px + var(--increase)) !important;
 }
 
 .dev_page_block.main_desc {
-  min-width: 610px !important;
+  min-width: calc(405px + var(--increase)) !important;
 }
 
 .dev_parts_list {
-  min-width: 638px !important;
+  min-width: calc(433px + var(--increase)) !important;
 }
 
 .apps_manage_layout {
-  min-width: 765px !important;
+  min-width: calc(405px + var(--increase)) !important;
 }
 
 .dev_page_cont_wrap {
-  min-width: 705px !important;
+  min-width: calc(500px + var(--increase)) !important;
 }
 
 .no_wrap_cont .dev_page_cont_wrap {
-  min-width: 765px !important;
+  min-width: calc(560px + var(--increase)) !important;
 }
 
 #dev_top_nav {
-  min-width: 1000px !important;
+  min-width: calc(795px + var(--increase)) !important;
 }
 
-
 #page_header {
-  min-width: 1165px !important;
+  min-width: calc(960px + var(--increase)) !important;
   margin: 0 !important;
 }
 
 .im-page.im-page_classic {
-  min-width: 755px !important;
+  min-width: calc(550px + var(--increase)) !important;
 }
 
 .im-right-menu.ui_rmenu {
-  margin-left: 770px !important;
+  margin-left: calc(565px + var(--increase)) !important;
 }
 
 .im-page.im-page_classic .im-page--header {
-  min-width: 755px !important;
+  min-width: calc(550px + var(--increase)) !important;
 }
 
 .im-page.im-page_classic .im-page--header-chat {
-  min-width: 757px !important;
+  min-width: calc(552px + var(--increase)) !important;
 }
 
 .im-page.im-page_classic .im-page--dialogs-footer {
-  min-width: 755px !important;
+  min-width: calc(550px + var(--increase)) !important;
 }
 
 .im-page.im-page_classic .im-page--chat-input {
-  min-width: 755px !important;
+  min-width: calc(550px + var(--increase)) !important;
 }
 
 .body_im #page_header_cont {
-  width: 1195px !important;
+  width: calc(990px + var(--increase)) !important;
   left: 0 !important;
   right: 0 !important;
   margin: 0 auto !important;
@@ -101,45 +133,39 @@ body {
 }
 
 .im-page.im-page_classic .im-mess-stack {
-  max-width: 755px !important;
+  max-width: calc(550px + var(--increase)) !important;
 }
 
 .im-page.im-page_classic .im-mess:not(.im-mess_fwd) {
-  max-width: 747px !important;
+  max-width: calc(542px + var(--increase)) !important;
 }
 
 .im-chat-input.im-chat-input_classic .im-chat-input--textarea {
-  min-width: 583px !important;
+  min-width: calc(378px + var(--increase)) !important;
 }
 
 .apps_feed_block {
-  min-width: 553px !important;
+  min-width: calc(348px + var(--increase)) !important;
 }
 
 .apps_featured_slider {
-  min-width: 1000px !important;
+  min-width: calc(795px + var(--increase)) !important;
 }
 
-.apps_cat_row {
-  margin-right: 50px !important;
-  margin-top: 30px !important;
-  margin-bottom: 25px !important;
-}
-
-.apps_cat_wrap {
-  margin-left: 50px !important;
-}
-
-.photos_albums {
-  font-size: 0px !important;
-}
-
-.photos_container_albums .photos_album_thumb {
-  width: 233px !important;
+#wk_page_acts {
+  margin-left: calc(808px + var(--increase)) !important;
 }
 
 #photos_choose_album_rows .photos_album_thumb {
   width: 289px !important;
+}
+
+#page_photos_module > a {
+  width: 170px !important;
+}
+
+.photos_albums {
+  font-size: 0px !important;
 }
 
 .photos_container_album_grid {
@@ -149,14 +175,6 @@ body {
 #page_photos_module {
   display: flex !important;
   justify-content: space-around !important;
-}
-
-#page_photos_module > a {
-  width: 170px !important;
-}
-
-#wk_page_acts {
-  margin-left: 1013px !important;
 }
 
 /* Attach non-scrolling columns to the top */
@@ -309,12 +327,15 @@ body:not(.body_im) #page_header_cont {
 
 .pv_cont .narrow_column .pv_author_img,
 .pv_cont .narrow_column a,
+.pv_cont .narrow_column button,
 .pv_cont .narrow_column .pv_like,
 .pv_cont .narrow_column .pv_can_edit,
 .pv_cont .narrow_column .pv_comments_header,
 .pv_cont .narrow_column .reply_image,
 .pv_cont .narrow_column .post_actions_wrap,
-.pv_cont .narrow_column .reply_box {
+.pv_cont .narrow_column .reply_box,
+.pv_cont .narrow_column .slider,
+.pv_cont .narrow_column .audio_info {
   pointer-events: auto !important;
 }
 
@@ -395,3 +416,51 @@ body:not(.body_im) #page_header_cont {
 .post[data-ad] {
   display: none !important;
 }
+
+/* Make unread messages blue */
+
+
+.im-mess.im-mess_unread {
+  background: #e4ebf1 !important;
+}
+.im-mess.im-mess_selected:last-child:before, .im-mess.im-mess_unread:last-child:before {
+  background: #e4ebf1 !important;
+}
+
+.im-mess.im-mess_selected+.im-mess:before,.im-mess.im-mess_unread+.im-mess:before {
+  background: #e4ebf1 !important;
+}
+
+.im-mess.im-mess_selected, .im-mess.im-mess_selected:hover {
+  background: #e4ebf1 !important;
+}
+
+
+/*
+._im_unread_bar_row ~ * .im-mess {
+  background: #e7edf2 !important;
+}
+
+._im_unread_bar_row + * .im-mess {
+  border-top-left-radius: 3px !important;
+  border-top-right-radius: 3px !important;
+}
+
+._im_unread_bar_row ~ * .im-mess.im-mess_gift:last-child:before {
+  display: none !important;
+}
+
+._im_unread_bar_row ~ * .im-mess:last-child:before {
+  display: block !important;
+  content: "" !important;
+  position: absolute !important;
+  width: 100% !important;
+  height: 3px !important;
+  border-radius: 0 0 3px 3px !important;
+  background: #e7edf2 !important;
+  bottom: -2px !important;
+}
+*/
+rtant;
+}
+*/
